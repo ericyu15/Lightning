@@ -2,8 +2,8 @@ int startX = 0;
 int startY = 150;
 int endX = 0;
 int endY = 150;
-int ballX = 150;
-int ballY = 150;
+int ballX = 250;
+int ballY = 250;
 void setup()
 {
   size(500,500);
@@ -34,8 +34,8 @@ void mousePressed()
   startY = ballY;
   endX = ballX;
   endY = ballY;
-  ballX = 250;
-  ballY = 250;
+  ballX = (int)(Math.random()*400)-9;
+  ballY = (int)(Math.random()*400)-9;
   background(255);
 }
 
