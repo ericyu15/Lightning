@@ -37,6 +37,11 @@ background(50);
   	 line(startA,startB,endA,endB);
   	 startA = endA;
   	 startB = endB;
+  	 endC = endC - (int)(Math.random()*9);
+  	 endD = endD + (int)(Math.random()*19)-9;
+  	 line(startC,endC,startD,endD);
+  	 startC = endC;
+  	 startD = endD;
   	}
   ballX = ballX + (int)(Math.random()*19)-9;
   ballY = ballY + (int)(Math.random()*19)-9;
@@ -52,6 +57,10 @@ void mousePressed()
   startB = ballY;
   endA = ballX;
   endB = ballY;
+  startC = ballX;
+  startD = ballY;
+  endC = ballX;
+  endD = ballY;
   ballX = (int)(Math.random()*400)-9;
   ballY = (int)(Math.random()*400)-9;
   background(255);
